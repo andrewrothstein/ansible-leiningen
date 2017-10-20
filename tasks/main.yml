@@ -2,7 +2,11 @@
 - name: download lein script
   become: yes
   become_user: root
-  get_url: >-
-    url={{leinengen_url}}
-    dest={{leinengen_install_dir}}/lein
-    mode=0755
+  get_url:
+    url: '{{leinengen_url}}'
+    dest: '{{leinengen_install_dir}}/lein'
+    mode: 0755
+- name: initialize...
+  become: yes
+  become_user: root
+  command: bash -l -c {{leinengen_install_dir}}/lein

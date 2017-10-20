@@ -9,18 +9,32 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - 7
+        - all
     - name: Fedora
       versions:
-        - 23
+        - all
     - name: Ubuntu
       versions:
-        - xenial
+        - all
+    - name: Alpine
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Archlinux
+      versions:
+        - all
 
   galaxy_tags:
     - development
 
 dependencies:
-  - role: andrewrothstein.java
-    version: v1.0.2
-  
+  - src: andrewrothstein.java-oracle-jdk
+    version: v2.0.4
+  - src: andrewrothstein.bash
+    version: v1.0.5
+  - src: andrewrothstein.openssl
+    version: v1.0.0
+  - src: andrewrothstein.wget
+    version: v1.0.0
