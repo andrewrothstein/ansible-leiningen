@@ -33,7 +33,7 @@ dependencies:
   - src: andrewrothstein.java-oracle-jdk
     version: v2.0.6
   - src: andrewrothstein.bash
-    version: v1.1.0
+    version: v1.1.1
   - src: andrewrothstein.openssl
     version: v1.0.0
   - src: andrewrothstein.wget
