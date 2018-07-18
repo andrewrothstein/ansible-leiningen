@@ -31,7 +31,7 @@ galaxy_info:
 
 dependencies:
   - src: andrewrothstein.java-oracle-jdk
-    version: v2.0.6
+    version: v2.0.8
   - src: andrewrothstein.bash
     version: v1.1.1
   - src: andrewrothstein.openssl
