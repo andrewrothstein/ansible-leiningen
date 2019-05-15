@@ -1,40 +1,37 @@
----
+dependencies:
+- role: andrewrothstein.openjdk
+  version: v1.0.0
+- role: andrewrothstein.bash
+  version: v1.1.1
+- role: andrewrothstein.openssl
+  version: v1.0.0
+- role: andrewrothstein.wget
+  version: v1.0.0
 galaxy_info:
   author: Andrew Rothstein
-  description: leinengen installer
   company: BlackRock
+  description: leinengen installer
+  galaxy_tags:
+  - development
   license:
-    - MIT
+  - MIT
   min_ansible_version: 1.2
   platforms:
-    - name: EL
-      versions:
-        - all
-    - name: Fedora
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
-    - name: Alpine
-      versions:
-        - all
-    - name: Debian
-      versions:
-        - all
-    - name: Archlinux
-      versions:
-        - all
-
-  galaxy_tags:
-    - development
-
-dependencies:
-  - src: andrewrothstein.java-oracle-jdk
-    version: v2.1.2
-  - src: andrewrothstein.bash
-    version: v1.1.1
-  - src: andrewrothstein.openssl
-    version: v1.0.0
-  - src: andrewrothstein.wget
-    version: v1.0.0
+  - name: EL
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Alpine
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  - name: Archlinux
+    versions:
+    - all
