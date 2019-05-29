@@ -2,7 +2,7 @@ dependencies:
 - role: andrewrothstein.openjdk
   version: v1.0.0
 - role: andrewrothstein.bash
-  version: v1.1.1
+  version: v1.1.3
 - role: andrewrothstein.openssl
   version: v1.0.0
 - role: andrewrothstein.wget
