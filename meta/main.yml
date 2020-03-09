@@ -1,11 +1,11 @@
 dependencies:
 - openjdk_app: jdk
   role: andrewrothstein.openjdk
-  version: v2.0.4
+  version: v2.0.6
 - role: andrewrothstein.bash
-  version: v1.1.3
+  version: v1.1.5
 - role: andrewrothstein.openssl
-  version: v1.0.1
+  version: v1.0.2
 - role: andrewrothstein.wget
   version: v1.0.0
 galaxy_info:
