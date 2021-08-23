@@ -3,8 +3,8 @@
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
-    - command: /usr/local/bin/lein --version
+    - command: bash -l -c '/usr/local/bin/lein --version'
       register: leinengen_test_output
-    - name: len --version
+    - name: lein --version
       debug:
         msg: '{{ leinengen_test_output.stdout }}'
