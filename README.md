@@ -1,6 +1,6 @@
 andrewrothstein.leinengen
 ===========================
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-leinengen.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-leinengen)
+![Build Status](https://github.com/andrewrothstein/ansible-leinengen/actions/workflows/build.yml/badge.svg)
 
 Installs [Leinengen](https://leiningen.org/)
 
