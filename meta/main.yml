@@ -1,13 +1,10 @@
+---
 dependencies:
 - openjdk_app: jdk
-  role: andrewrothstein.openjdk
-  version: v2.0.17
-- role: andrewrothstein.bash
-  version: v1.1.8
-- role: andrewrothstein.openssl
-  version: v1.0.6
-- role: andrewrothstein.wget
-  version: v1.0.3
+  role: andrewrothstein.temurin
+- andrewrothstein.bash
+- andrewrothstein.openssl
+- andrewrothstein.wget
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
@@ -31,11 +28,13 @@ galaxy_info:
   - name: EL
     versions:
     - 8
+    - 9
   - name: Fedora
     versions:
-    - 34
-    - 35
+    - 36
+    - 37
   - name: Ubuntu
     versions:
     - bionic
     - focal
+    - jammy
