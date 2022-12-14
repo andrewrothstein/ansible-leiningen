@@ -1,10 +1,4 @@
 ---
-dependencies:
-- openjdk_app: jdk
-  role: andrewrothstein.temurin
-- andrewrothstein.bash
-- andrewrothstein.openssl
-- andrewrothstein.wget
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
