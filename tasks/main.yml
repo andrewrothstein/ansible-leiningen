@@ -1,24 +1,28 @@
 ---
-- include_role:
+- name: Installing andrewrothstein.temurin
+  ansible.builtin.include_role:
     name: andrewrothstein.temurin
   vars:
-    openjdk_app: jdk
-- include_role:
+    temurin_app: jdk
+- name: Installing andrewrothstien.bash
+  ansible.builtin.include_role:
     name: andrewrothstein.bash
-- include_role:
+- name: Installing andrewrothstein.openssl
+  ansible.builtin.include_role:
     name: andrewrothstein.openssl
-- include_role:
+- name: Installing andrewrothstein.wget
+  ansible.builtin.include_role:
     name: andrewrothstein.wget
-- name: downloading {{ leinengen_url }}
+- name: Downloading {{ leiningen_url }}
   become: true
   become_user: root
-  get_url:
-    url: '{{ leinengen_url }}'
-    dest: '{{ leinengen_exe }}'
-    mode: 0755
-- name: initializing with {{ leinengen_exe }}
+  ansible.builtin.get_url:
+    url: '{{ leiningen_url }}'
+    dest: '{{ leiningen_exe }}'
+    mode: '755'
+- name: Initializing with {{ leiningen_exe }}
   become: true
   become_user: root
-  command: bash -lc {{ leinengen_install_dir }}/lein
+  ansible.builtin.command: bash -lc {{ leiningen_install_dir }}/lein
   args:
-    creates: '{{ lookup("env","HOME") }}/.lein'
+    creates: '{{ lookup("env", "HOME") }}/.lein'

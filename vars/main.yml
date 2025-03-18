@@ -1,4 +1,4 @@
 ---
-# vars file for ansible-leinengen
-leinengen_url: https://raw.githubusercontent.com/technomancy/leiningen/{{ leinengen_ver }}/bin/lein
-leinengen_exe: '{{ leinengen_install_dir }}/lein'
+# vars file for ansible-leiningen
+leiningen_url: https://raw.githubusercontent.com/technomancy/leiningen/{{ leiningen_ver }}/bin/lein
+leiningen_exe: '{{ leiningen_install_dir }}/lein'

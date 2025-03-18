@@ -1,9 +1,9 @@
 ---
 - name: andrewrothstein.temurin
-  version: 1.1.4
+  version: 2.0.4
 - name: andrewrothstein.bash
-  version: v1.1.11
+  version: v1.2.2
 - name: andrewrothstein.openssl
-  version: v1.0.11
+  version: v1.2.3
 - name: andrewrothstein.wget
-  version: v1.0.8
+  version: v1.0.11

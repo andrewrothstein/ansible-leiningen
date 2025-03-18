@@ -1,10 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.leiningen
+  hosts: all
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
-    - command: bash -l -c '/usr/local/bin/lein --version'
+    - name: Executing 'lein --version'
+      ansible.builtin.command: bash -lc 'lein --version'
+      changed_when: false
       register: leinengen_test_output
-    - name: lein --version
-      debug:
+    - name: Output from 'lein --version'
+      ansible.builtin.debug:
         msg: '{{ leinengen_test_output.stdout }}'
